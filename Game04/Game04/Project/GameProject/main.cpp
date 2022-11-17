@@ -77,6 +77,7 @@ void Init(void)
 	ADD_RESOURCE("Bullet2", CImage::CreateImage("Image/Bullet2.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 	ADD_RESOURCE("Gauge", CImage::CreateImage("Image/Gauge.png"));
+	ADD_RESOURCE("Title", CImage:CreateImage("Image/Title.png"));
 
 	//プレイヤー①の生成
 	Base::Add(new Player(CVector2D(200,350), 0));
@@ -86,7 +87,7 @@ void Init(void)
 	Base::Add(new Map());
 
 	//タイトルから開始
-	//Base::Add(new Title());
+	Base::Add(new Title());
 
 }
 

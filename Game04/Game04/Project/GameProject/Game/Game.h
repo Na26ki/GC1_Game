@@ -1,4 +1,3 @@
-/*
 pragma once
 #include "../Base/Base.h"
 
@@ -9,4 +8,3 @@ public:
 	~Game();
 	void Update();
 };
-*/

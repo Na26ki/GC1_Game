@@ -36,6 +36,9 @@
     <Filter Include="Game">
       <UniqueIdentifier>{3f01e8b2-9cb0-43f7-a56b-0dde0f51209f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game\Title">
+      <UniqueIdentifier>{74d4d1e9-9a99-4e9b-9697-d0b959296567}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h">

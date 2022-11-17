@@ -8,12 +8,15 @@ Gauge::Gauge(int gauge_type) :Base(eType_UI) {
 }
 
 void Gauge::Draw() {
-
 	//˜g‚Ì•\¦
 	m_img.SetRect(0, 0, 256, 64);
 	m_img.SetSize(256, 64);
 	m_img.SetPos(m_pos);
 	m_img.Draw();
+	//	m_img.SetRect(0, 0, 256, 64);
+	//	m_img.SetSize(256, 64);
+	//	m_img.SetPos(m_pos);
+	//	m_img.Draw();
 
 	//ƒQ[ƒW‚Ì•\¦
 	//ƒQ[ƒW‚Ì’·‚³ 4‚Í˜g‚Ì‘¾‚³
@@ -24,10 +27,15 @@ void Gauge::Draw() {
 	m_img.SetSize(width, 64 - border - border);
 	m_img.SetPos(m_pos + CVector2D(border, border));
 	m_img.Draw();
-
+	//	int border = 4;
+	//	int width = (256 - border - border) * m_par;
+	//	int y = (m_gauge_type + 1);
+	//	m_img.SetRect(border, (64 * y) + border, 4 + width, (64 * (y + 1)) - border);
+	//	m_img.SetSize(width, 64 - border - border);
+	//	m_img.SetPos(m_pos + CVector2D(border, border));
+	//	m_img.Draw();
 
 }
-
 void Gauge::SetValue(float par)
 {
 	m_par = par;
