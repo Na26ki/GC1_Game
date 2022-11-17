@@ -3,19 +3,18 @@
 //#include "Field.h"
 #include "Player.h"
 #include "Enemy.h"
+#include "Gauge.h"
 #include "../Title/Title.h"
 
 Game::Game() :Base(eType_Scene)
 {
+	//Map
 	Base::Add(new Map());
+	//Player
+	//Base::Add();
+	//Gauge
+	//Base::Add(new Gauge());
 
-
-//Base::Add(new Map());
-	//Base::Add(new Field());
-//Base::Add(new Player(CVector2D(0, 540), false));
-//Base::Add(new Enemy(CVector2D(1280 + 256 * 1, 540), true));
-	//Base::Add(new Enemy(CVector2D(1280 + 256 * 2, 540), true));
-	//Base::Add(new Enemy(CVector2D(1280 + 256 * 3, 540), true));
 }
 
 Game::~Game()

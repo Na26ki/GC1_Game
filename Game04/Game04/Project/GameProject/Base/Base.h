@@ -1,6 +1,10 @@
 #pragma once
 #include <GLLibrary.h>
+//重力加速度
+#define GRAVITY (9.8f/20)
+
 enum {
+	eType_Scene,
 	eType_Map,
 	eType_Field,
 	eType_Player,
@@ -11,12 +15,9 @@ enum {
 	eType_Goal,
 	eType_Title,
 	eType_Effect,
-	eType_Scene,
 	eType_UI,
 };
 
-//重力加速度
-#define GRAVITY (9.8f/20)
 class Base {
 public:
 	//オブジェクトの種類

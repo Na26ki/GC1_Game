@@ -7,7 +7,7 @@
 #include "Game/Player.h"
 #include "Game/Enemy.h"
 #include "Game/Map.h"
-//#include "Title/Title.h"
+#include "Title/Title.h"
 
 //--------------------------------------------
 //グローバル変数領域
@@ -77,14 +77,14 @@ void Init(void)
 	ADD_RESOURCE("Bullet2", CImage::CreateImage("Image/Bullet2.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 	ADD_RESOURCE("Gauge", CImage::CreateImage("Image/Gauge.png"));
-	ADD_RESOURCE("Title", CImage:CreateImage("Image/Title.png"));
+	ADD_RESOURCE("Title", CImage::CreateImage("Image/Title.png"));
 
 	//プレイヤー①の生成
-	Base::Add(new Player(CVector2D(200,350), 0));
+	//Base::Add(new Player(CVector2D(200,350), 0));
 	//プレイヤー②の生成
-	Base::Add(new Player(CVector2D(1060,350), 1));
+	//Base::Add(new Player(CVector2D(1060,350), 1));
 	//マップの生成
-	Base::Add(new Map());
+	//Base::Add(new Map());
 
 	//タイトルから開始
 	Base::Add(new Title());
