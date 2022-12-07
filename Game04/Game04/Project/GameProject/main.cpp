@@ -8,6 +8,7 @@
 #include "Game/Enemy.h"
 #include "Game/Effect.h"
 #include "Title/Title.h"
+#include "Game/Field.h"
 #include "Game/Map.h"
 
 //--------------------------------------------
@@ -81,6 +82,7 @@ void Init(void)
 	ADD_RESOURCE("Bullet2", CImage::CreateImage("Image/Bullet2.png"));
 	ADD_RESOURCE("Gauge", CImage::CreateImage("Image/Gauge.png"));
 	//ADD_RESOURCE("Effect", CImage::CreateImage("Image/Effect_Bomb.png",effect_bomb_date,128,128));
+	ADD_RESOURCE("sand", CImage::CreateImage("Image/sand.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 
 	//プレイヤー①の生成
@@ -89,6 +91,8 @@ void Init(void)
 	//Base::Add(new Player(CVector2D(1060,350), 1));
 	//マップの生成
 	//Base::Add(new Map());
+	//フィールドの生成
+	//Base::Add(new Field);
 
 	//タイトルから開始
 	Base::Add(new Title());

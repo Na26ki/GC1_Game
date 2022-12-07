@@ -34,6 +34,9 @@
     <ClCompile Include="Game\Effect.cpp">
       <Filter>Game</Filter>
     </ClCompile>
+    <ClCompile Include="Game\Field.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Base">
@@ -75,6 +78,9 @@
       <Filter>Game\Title</Filter>
     </ClInclude>
     <ClInclude Include="Game\Effect.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Field.h">
       <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>
