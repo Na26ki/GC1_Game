@@ -11,7 +11,7 @@ Player::Player(const CVector2D& pos,int player_id)
 	//’†S‚ğİ’è
 	m_img.SetCenter(16, 16);
 	//’ZŒ`‚ğİ’è  //¶ //ã //‰E //‰º
-	m_rect = CRect(-36, -36, 36, 36);
+	m_rect = CRect(-16, -16, 16, 16);
 	//”¼Œa
 	m_rad = 16;
 	m_player_id = player_id;

@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "Field.h"
 #include "Map.h"
 //#include "Field.h"
 #include "Player.h"
@@ -8,6 +9,7 @@
 
 Game::Game() :Base(eType_Scene)
 {
+	Base::Add(new Field());
 	Base::Add(new Map());
 	Base::Add(new Gauge(0));
 	Base::Add(new Player(CVector2D(200,200),false));
