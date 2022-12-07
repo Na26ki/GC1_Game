@@ -1,17 +1,17 @@
 #include "Player.h"
 #include "Bullet.h"
-#include "Map.h"
 #include "Gauge.h"
+#include "Map.h"
 
 Player::Player(const CVector2D& pos,int player_id)
 	:Base(eType_Player){
 	//画像を読み込んで複製
-	m_img = COPY_RESOURCE("Player2", CImage);
+	m_img = COPY_RESOURCE("Player", CImage);
 	m_pos = pos;
 	//中心を設定
 	m_img.SetCenter(16, 16);
-	//短形を設定
-	m_rect = CRect(-16, -16, 16, 16);
+	//短形を設定  //左 //上 //右 //下
+	m_rect = CRect(-36, -36, 36, 36);
 	//半径
 	m_rad = 16;
 	m_player_id = player_id;
@@ -32,6 +32,7 @@ Player::~Player()
 }
 void Player::Update()
 {
+	m_pos_old = m_pos;
 	const float speed = 4;
 
 	//アナログスティックはx,yそれぞれ-1～1の値を返却
@@ -65,6 +66,7 @@ void Player::Update()
 	}
 
 }
+
 void Player::Collision(Base* b)
 {
 	switch (b->m_type) {
@@ -77,8 +79,20 @@ void Player::Collision(Base* b)
 			}
 		}
 		break;
+
+	case eType_Field:
+		if (Map* m = dynamic_cast<Map*>(b)) {
+			int t = m->CollisionMap(CVector2D(m_pos.x, m_pos_old.y));
+			if (t != 0)
+				m_pos.x = m_pos_old.x;
+			t = m->CollisionMap(CVector2D(m_pos_old.x, m_pos.y));
+			if (t != 0)
+				m_pos.y = m_pos_old.y;
+		}
+		break;
 	}
 }
+
 void Player::Draw() 
 {
 	m_img.SetPos(m_pos);

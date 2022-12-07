@@ -6,8 +6,9 @@
 #include "Base/Base.h"
 #include "Game/Player.h"
 #include "Game/Enemy.h"
-#include "Game/Map.h"
+#include "Game/Effect.h"
 #include "Title/Title.h"
+#include "Game/Map.h"
 
 //--------------------------------------------
 //グローバル変数領域
@@ -71,15 +72,16 @@ void Init(void)
 	//ゲーム起動時に一度だけ呼ばれる
 	//-----------------------------------------------------
 	//画像読み込み
+	ADD_RESOURCE("Title", CImage::CreateImage("Image/Title.png"));
 	ADD_RESOURCE("Player", CImage::CreateImage("Image/Player.png"));
 	ADD_RESOURCE("Player1", CImage::CreateImage("Image/Player1.png"));
 	ADD_RESOURCE("Player2", CImage::CreateImage("Image/Player2.png"));
 	ADD_RESOURCE("Enemy", CImage::CreateImage("Image/Enemy.png"));
 	ADD_RESOURCE("Bullet", CImage::CreateImage("Image/Bullet.png"));
 	ADD_RESOURCE("Bullet2", CImage::CreateImage("Image/Bullet2.png"));
-	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 	ADD_RESOURCE("Gauge", CImage::CreateImage("Image/Gauge.png"));
-	ADD_RESOURCE("Title", CImage::CreateImage("Image/Title.png"));
+	//ADD_RESOURCE("Effect", CImage::CreateImage("Image/Effect_Bomb.png",effect_bomb_date,128,128));
+	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 
 	//プレイヤー①の生成
 	//Base::Add(new Player(CVector2D(200,350), 0));

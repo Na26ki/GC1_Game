@@ -44,7 +44,7 @@ void Map::Draw()
 			//表示サイズ設定
 			m_img.SetSize(MAP_TIP_SIZE, MAP_TIP_SIZE);
 			//表示位置設定
-			m_img.SetPos(MAP_TIP_SIZE * j, MAP_TIP_SIZE * i);
+			m_img.SetPos(MAP_TIP_SIZE * j-m_scroll.x, MAP_TIP_SIZE * i-m_scroll.y);
 			//描画
 			m_img.Draw();
 		}
@@ -58,15 +58,16 @@ int Map::GetTip(const CVector2D& pos)
 	int col = pos.x / MAP_TIP_SIZE;
 	
 	//列の制限(0～MAP_WIDTH-1)
-	if (col < 0) col = 0;
-	if (col > MAP_WIDTH - 1) col = MAP_WIDTH - 1;
+	//if (col < 0) col = 0;
+	//if (col > MAP_WIDTH - 1) col = MAP_WIDTH - 1;
+
 	//行を計算
-	
 	int raw = pos.y / MAP_TIP_SIZE;
 	
 	//行の制限(0～MAP_HEIGHT-1)
-	if (raw < 0) raw = 0;
-	if (raw > MAP_HEIGHT - 1) raw = MAP_HEIGHT - 1;
+	//if (raw < 0) raw = 0;
+	//if (raw > MAP_HEIGHT - 1) raw = MAP_HEIGHT - 1;
+
 	//チップデータを返却
 	return GetTip(col, raw);
 }

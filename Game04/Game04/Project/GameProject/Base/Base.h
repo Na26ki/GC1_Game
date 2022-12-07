@@ -4,8 +4,6 @@
 #define GRAVITY (9.8f/20)
 
 enum {
-	eType_Scene,
-	eType_Map,
 	eType_Field,
 	eType_Player,
 	eType_Enemy,
@@ -15,7 +13,9 @@ enum {
 	eType_Goal,
 	eType_Title,
 	eType_Effect,
+	eType_Map,
 	eType_UI,
+	eType_Scene,
 };
 
 class Base {

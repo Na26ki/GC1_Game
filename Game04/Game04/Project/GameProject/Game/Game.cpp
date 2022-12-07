@@ -11,6 +11,7 @@ Game::Game() :Base(eType_Scene)
 	Base::Add(new Map());
 	Base::Add(new Gauge(0));
 	Base::Add(new Player(CVector2D(200,200),false));
+	Base::Add(new Player(CVector2D(800, 800), false));
 }
 
 Game::~Game()
