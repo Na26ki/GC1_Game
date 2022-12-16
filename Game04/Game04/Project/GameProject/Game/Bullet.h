@@ -10,7 +10,7 @@ public:
 		//pos : ˆÊ’u
 		//ang : Šp“x
 		//speed : ‘¬‚³
-	Bullet(int type, const CVector2D& pos, float ang, float speed);
+	Bullet(int type, int player_id, const CVector2D& pos, float ang, float speed);
 	void Update();
 	void Draw();
 	void Collision(Base* b);

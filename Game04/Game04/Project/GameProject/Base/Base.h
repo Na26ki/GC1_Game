@@ -39,6 +39,7 @@ public:
 	int	m_hit_id;
 	//削除フラグ
 	bool m_kill;
+	int m_player_id;
 	//スクロール値
 	static CVector2D m_scroll;
 

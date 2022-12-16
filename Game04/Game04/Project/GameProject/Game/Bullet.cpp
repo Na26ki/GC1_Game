@@ -1,7 +1,7 @@
 #include "Bullet.h"
 #include "Map.h"
 
-Bullet::Bullet(int type, const CVector2D& pos, float ang, float speed) : Base(type)
+Bullet::Bullet(int type, int player_id, const CVector2D& pos, float ang, float speed) : Base(type)
 {
 	if (type == eType_Player_Bullet)
 		m_img = COPY_RESOURCE("Bullet", CImage);
@@ -35,18 +35,6 @@ void Bullet::Collision(Base* b)
 			int t = m->CollisionMap(m_pos);
 			if (t != 0)
 				SetKill();
-		}
-		break;
-	case eType_Player:
-		if (m_type == eType_Enemy_Bullet && Base::CollisionCircle(this, b)) {
-			SetKill();
-			b->SetKill();
-		}
-		break;
-	case eType_Enemy:
-		if (m_type == eType_Player_Bullet && Base::CollisionCircle(this, b)) {
-			SetKill();
-			b->SetKill();
 		}
 		break;
 

@@ -4,7 +4,6 @@
 class Gauge;
 class Player : public Base {
 	CImage m_img;
-	int m_player_id;
 
 private:
 	int m_hp;

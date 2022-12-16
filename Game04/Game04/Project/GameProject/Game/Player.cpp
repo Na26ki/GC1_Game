@@ -62,7 +62,7 @@ void Player::Update()
 	// 
 	//コントローラーによるが右トリガーボタン
 	if (PUSH_PAD(m_player_id, CInput::eButton6)) {
-		Base::Add(new Bullet(eType_Player_Bullet, m_pos, m_ang, 4));
+		Base::Add(new Bullet(eType_Player_Bullet, m_player_id,m_pos, m_ang, 4));
 	}
 
 }
@@ -77,6 +77,16 @@ void Player::Collision(Base* b)
 				m_hp = 0;
 				SetKill();
 			}
+		}
+		break;
+
+	case eType_Player_Bullet:
+		if (m_player_id != b->m_player_id && Base::CollisionCircle(this, b)) {
+
+			m_hp -= 20;
+			if (m_hp <= 0)
+			SetKill();
+			b->SetKill();
 		}
 		break;
 
@@ -98,4 +108,11 @@ void Player::Draw()
 	m_img.SetPos(m_pos);
 	m_img.SetAng(m_ang);
 	m_img.Draw();
+
+	CVector2D gp[] = {
+		{0,0},
+		{1280 - 256,0},
+	};
+	m_gauge->m_pos = gp[m_player_id];
+	m_gauge->SetValue((float)m_hp / m_max_hp);
 }
