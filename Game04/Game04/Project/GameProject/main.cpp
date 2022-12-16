@@ -82,7 +82,7 @@ void Init(void)
 	ADD_RESOURCE("Bullet", CImage::CreateImage("Image/Bullet.png"));
 	ADD_RESOURCE("Bullet2", CImage::CreateImage("Image/Bullet2.png"));
 	ADD_RESOURCE("Gauge", CImage::CreateImage("Image/Gauge.png"));
-	ADD_RESOURCE("Effect", CImage::CreateImage("Image/Effect_Bomb.png",effect_bomb_date,128,128));
+	//ADD_RESOURCE("Effect_Bomb", CImage::CreateImage("Image/Effect_Bomb.png",effect_bomb_date,128,128));
 	ADD_RESOURCE("sand", CImage::CreateImage("Image/sand.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 
