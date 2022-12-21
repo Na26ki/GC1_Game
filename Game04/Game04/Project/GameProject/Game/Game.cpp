@@ -9,7 +9,7 @@
 
 Game::Game() :Base(eType_Scene)
 {
-	Base::Add(new Field());
+	//Base::Add(new Field());
 	Base::Add(new Map());
 	//[ 0 1 ]‚ÅƒvƒŒƒCƒ„[‚Ì‹æ•Ê‚ğ‚µ‚Ä‚¢‚é
 	Base::Add(new Player(CVector2D(200,200),0));

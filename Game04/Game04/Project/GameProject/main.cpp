@@ -76,14 +76,13 @@ void Init(void)
 	ADD_RESOURCE("Title", CImage::CreateImage("Image/Title.png"));
 	ADD_RESOURCE("Player", CImage::CreateImage("Image/Player.png"));
 	ADD_RESOURCE("Player1", CImage::CreateImage("Image/Player1.png"));
-	ADD_RESOURCE("Player2", CImage::CreateImage("Image/Player2.png"));
-	ADD_RESOURCE("Player3", CImage::CreateImage("Image/Player3.png"));
 	ADD_RESOURCE("Enemy", CImage::CreateImage("Image/Enemy.png"));
 	ADD_RESOURCE("Bullet", CImage::CreateImage("Image/Bullet.png"));
 	ADD_RESOURCE("Bullet2", CImage::CreateImage("Image/Bullet2.png"));
 	ADD_RESOURCE("Gauge", CImage::CreateImage("Image/Gauge.png"));
 	//ADD_RESOURCE("Effect_Bomb", CImage::CreateImage("Image/Effect_Bomb.png",effect_bomb_date,128,128));
 	ADD_RESOURCE("sand", CImage::CreateImage("Image/sand.png"));
+	ADD_RESOURCE("sand2", CImage::CreateImage("Image/sand2.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 
 	//ÉvÉåÉCÉÑÅ[á@ÇÃê∂ê¨
