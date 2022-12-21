@@ -6,7 +6,7 @@
 Player::Player(const CVector2D& pos,int player_id)
 	:Base(eType_Player){
 	//‰æ‘œ‚ğ“Ç‚İ‚ñ‚Å•¡»
-	m_img = COPY_RESOURCE("Player1", CImage);
+	m_img = COPY_RESOURCE("Player2", CImage);
 	m_pos = pos;
 	//’†S‚ğİ’è
 	m_img.SetCenter(16, 16);
