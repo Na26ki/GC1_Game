@@ -1,7 +1,7 @@
 #include "Gauge.h"
 
 Gauge::Gauge(int gauge_type) :Base(eType_UI) {
-	m_img = COPY_RESOURCE("Gauge", CImage);
+	m_img = COPY_RESOURCE("Gauge1", CImage);
 	m_par = 0;
 	m_gauge_type = gauge_type;
 
