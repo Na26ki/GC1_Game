@@ -15,6 +15,7 @@ enum {
 	eType_Title,
 	eType_Effect,
 	eType_Map,
+	eType_Time,
 	eType_UI,
 	eType_Scene,
 };
