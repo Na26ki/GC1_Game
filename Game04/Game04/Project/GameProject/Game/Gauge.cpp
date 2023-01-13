@@ -13,13 +13,11 @@ void Gauge::Draw() {
 	//m_img.SetSize(256, 64);
 	//m_img.SetPos(m_pos);
 	//m_img.Draw();
-	m_img.SetRect(0, 0, 256, 64);
+	m_img.SetRect(0, 20, 256, 64);
 	m_img.SetSize(556, 95);
 	m_img.SetPos(m_pos);
 	m_img.Draw();
 
-	//ゲージの表示
-	//ゲージの長さ 4は枠の太さ
 	int border = 4;
 	int width = (256 - border - border) * m_par;
 	int y = (m_gauge_type + 1);

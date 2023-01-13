@@ -10,6 +10,8 @@ Player::Player(const CVector2D& pos,int player_id)
 	m_pos = pos;
 	//中心を設定
 	m_img.SetCenter(16, 16);
+	//表示サイズ
+	m_img.SetSize(46, 46);
 	//短形を設定  //左 //上 //右 //下
 	m_rect = CRect(-16, -16, 16, 16);
 	//半径
@@ -109,9 +111,12 @@ void Player::Draw()
 	m_img.SetAng(m_ang);
 	m_img.Draw();
 
+	//Gauge位置
 	CVector2D gp[] = {
-		{0,0},
-		{1280 - 256,0},
+		//{0,0},
+		//{1280 - 256,0},
+		{3,0},
+		{1280 - 560,0},
 	};
 	m_gauge->m_pos = gp[m_player_id];
 	m_gauge->SetValue((float)m_hp / m_max_hp);

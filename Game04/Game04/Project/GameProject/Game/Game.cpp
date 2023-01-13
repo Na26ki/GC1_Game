@@ -14,8 +14,8 @@ Game::Game() :Base(eType_Scene)
 	Base::Add(new Map());
 	Base::Add(new TIME());
 	//[ 0 1 ]‚ÅƒvƒŒƒCƒ„[‚Ì‹æ•Ê‚ğ‚µ‚Ä‚¢‚é
-	Base::Add(new Player(CVector2D(200,200),0));
-	Base::Add(new Player(CVector2D(1050, 200), 1));
+	Base::Add(new Player(CVector2D(200,330),0));
+	Base::Add(new Player(CVector2D(1050, 330), 1));
 }
 
 Game::~Game()
