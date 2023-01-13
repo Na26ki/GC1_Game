@@ -9,8 +9,12 @@ Gauge::Gauge(int gauge_type) :Base(eType_UI) {
 
 void Gauge::Draw() {
 	//˜g‚Ì•\Ž¦
+	//m_img.SetRect(0, 0, 256, 64);
+	//m_img.SetSize(256, 64);
+	//m_img.SetPos(m_pos);
+	//m_img.Draw();
 	m_img.SetRect(0, 0, 256, 64);
-	m_img.SetSize(256, 64);
+	m_img.SetSize(556, 95);
 	m_img.SetPos(m_pos);
 	m_img.Draw();
 
