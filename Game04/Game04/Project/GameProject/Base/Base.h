@@ -12,6 +12,7 @@ enum {
 	eType_Enemy_Bullet,
 	eType_Game,
 	eType_Goal,
+	eType_Gameover,
 	eType_Title,
 	eType_Effect,
 	eType_Map,

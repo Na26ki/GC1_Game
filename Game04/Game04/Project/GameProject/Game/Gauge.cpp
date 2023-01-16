@@ -19,10 +19,10 @@ void Gauge::Draw() {
 	m_img.Draw();
 
 	int border = 4;
-	int width = (256 - border - border) * m_par;
+	int width = (556 - border - border) * m_par;
 	int y = (m_gauge_type + 1);
-	m_img.SetRect(border, (64 * y) + border, 4 + width, (64 * (y + 1)) - border);
-	m_img.SetSize(width, 64 - border - border);
+	m_img.SetRect(0, 80, 256, 128);
+	m_img.SetSize(width, 95 - border - border);
 	m_img.SetPos(m_pos + CVector2D(border, border));
 	m_img.Draw();
 }

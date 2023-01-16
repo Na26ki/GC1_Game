@@ -43,6 +43,9 @@
     <ClCompile Include="Game\AnimData.cpp">
       <Filter>Game</Filter>
     </ClCompile>
+    <ClCompile Include="Game\Gameover.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Base">
@@ -93,6 +96,9 @@
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="Game\AnimData.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Gameover.h">
       <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>
