@@ -6,12 +6,12 @@
 Player::Player(const CVector2D& pos,int player_id)
 	:Base(eType_Player){
 	//画像を読み込んで複製
-	m_img = COPY_RESOURCE("	SENSYA", CImage);
+	m_img = COPY_RESOURCE("Player2", CImage);
 	m_pos = pos;
 	//中心を設定
 	m_img.SetCenter(16, 16);
 	//表示サイズ
-	m_img.SetSize(46, 46);
+	m_img.SetSize(48, 48);
 	//短形を設定  //左 //上 //右 //下
 	m_rect = CRect(-16, -16, 16, 16);
 	//半径
