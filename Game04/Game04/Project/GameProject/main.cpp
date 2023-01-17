@@ -85,7 +85,7 @@ void Init(void)
 	ADD_RESOURCE("Gauge1", CImage::CreateImage("Image/Gauge1.png"));
 	ADD_RESOURCE("sand", CImage::CreateImage("Image/sand.png"));
 	ADD_RESOURCE("sand2", CImage::CreateImage("Image/sand2.png"));
-	ADD_RESOURCE("Gameover2", CImage::CreateImage("Image/Gameover.png"));
+	ADD_RESOURCE("Gameover", CImage::CreateImage("Image/Gameover.png"));
 	ADD_RESOURCE("MapTip", CImage::CreateImage("Image/MapTip.png"));
 
 	//ÉvÉåÉCÉÑÅ[á@ÇÃê∂ê¨

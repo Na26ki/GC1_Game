@@ -24,7 +24,9 @@ Game::~Game()
 	//全てのオブジェクトを破棄
 	Base::KillAll();
 	//タイトルシーンへ
-	Base::Add(new Gameover2());
+	Base::Add(new Title());
+	//ゲームオーバーへ
+	//Base::Add(new Gameover());
 }
 
 void Game::Update()
