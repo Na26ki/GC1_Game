@@ -26,7 +26,7 @@ Game::~Game()
 	//タイトルシーンへ
 	Base::Add(new Title());
 	//ゲームオーバーへ
-	//Base::Add(new Gameover());
+	Base::Add(new Gameover());
 }
 
 void Game::Update()

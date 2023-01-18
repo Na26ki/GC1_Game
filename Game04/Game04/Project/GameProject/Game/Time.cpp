@@ -3,7 +3,7 @@
 TIME::TIME() :Base(eType_Scene),
 m_time_text("C://Windows//Fonts//msgothic.ttc", 64)
 {
-	time = 10 * 31;
+	time = 100 * 31;
 }
 
 void TIME::Update()
