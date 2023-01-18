@@ -11,7 +11,7 @@ Player::Player(const CVector2D& pos,int player_id)
 	//中心を設定
 	m_img.SetCenter(16, 16);
 	//表示サイズ
-	m_img.SetSize(48, 48);
+	m_img.SetSize(45, 45);
 	//短形を設定  //左 //上 //右 //下
 	m_rect = CRect(-16, -16, 16, 16);
 	//半径
