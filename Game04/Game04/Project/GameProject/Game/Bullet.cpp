@@ -12,6 +12,7 @@ Bullet::Bullet(int type, int player_id, const CVector2D& pos, float ang, float s
 	m_img.SetCenter(16, 16);
 	m_ang = ang;
 	m_speed = speed;
+	m_player_id = player_id;
 }
 
 void Bullet::Update() 
